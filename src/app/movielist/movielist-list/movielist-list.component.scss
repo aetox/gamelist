@@ -1,0 +1,22 @@
+li {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li a {
+
+    text-decoration: none;
+    color: #21325E;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li span {
+    color :#21325E
+}

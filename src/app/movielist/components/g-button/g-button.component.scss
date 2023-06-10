@@ -1,0 +1,15 @@
+button {
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: none;
+    color: #F1D00A;
+    border: 2px solid #F1D00A;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover{
+
+    background-color: #F1D00A;
+    color: #3E497A;
+}

@@ -1,0 +1,36 @@
+:host {
+    display: flex;
+    background-color: #F0F0F0;
+    padding: 15px;
+    flex-wrap: wrap;
+    max-width: 700px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #21325E;
+
+
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    
+}
+
+.infos h2 {
+    
+    padding: 10px;
+}
+
+.console {
+    display: flex;
+}
+
+.console h3 {
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+}
