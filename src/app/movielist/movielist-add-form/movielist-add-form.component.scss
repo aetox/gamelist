@@ -1,63 +1,10 @@
-:host {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+* {
+  font-family: var(--font-family);
 }
 
-h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #21325E;
-    padding: 30px;
-    text-transform: uppercase;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-form{
-    background-color:#F0F0F0;
-    padding: 10px;
-    border-radius: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #21325E;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-p {
-    padding-top: 10px;
-}
-
-
-.platforms {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.platform{
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    
-}
-.platform input {
-
-    margin-right: 5px ;
-}
-
-.description {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
-}
-
-input[type='file'] {
-
-    padding: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #3E497A;
-    color: #F1D00A;
-    border-radius: 10px;
-    cursor: pointer;
-}
-

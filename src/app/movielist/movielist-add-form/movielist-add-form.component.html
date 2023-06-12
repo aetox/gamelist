@@ -1,36 +1,32 @@
-<h1>Ajouter un jeu</h1>
+<form action="">
+  <div class="flex flex-column gap-2">
+    <label htmlFor="username">Username</label>
+    <input
+      pInputText
+      id="username"
+      aria-describedby="username-help"
+      formControlName="title"
+    />
+    <small id="username-help"
+      >Enter your username to reset your password.</small
+    >
+  </div>
 
-<form [formGroup]="newGame">
+  <p-checkbox
+    name="groupname"
+    value="val1"
+    label="Value 1"
+    formControlName="title"
+  ></p-checkbox>
+  <p-checkbox
+    name="groupname"
+    value="val2"
+    label="Value 2"
+    formControlName="title"
+  ></p-checkbox>
 
-    <label for="title">Nom du jeu: </label>
-    <input id="title" type="text" formControlName="title">
-
-    <p>Platformes :</p>
-    <div class="platforms">
-        
-        <div class="platform">
-            <input type="checkbox" id="playstation" name="platforms" value="playstation">
-            <label for="playstation">Playstation</label>
-        </div>
-        <div class="platform"> 
-            <input type="checkbox" id="xbox" name="xbox" value="xbox">
-            <label for="xbox">Xbox</label>
-        </div>
-        <div class="platform">
-            <input type="checkbox" id="pc" name="pc" value="pc">
-            <label for="pc">PC</label>
-        </div>
-        <div class="platform">
-            <input type="checkbox" id="switch" name="switch" value="switch">
-            <label for="switch">Switch</label>
-        </div>
-    </div>
-    <div class="description">  
-        <label for="description">Description du jeu</label>
-        <textarea name="description" id="description" cols="30" rows="10"></textarea>
-    </div>
-
-    <input type="file" name="img" id="img">
-
-    <button type="submit">Ajouter le jeu</button>
-  </form>
+  <span class="p-float-label">
+    <textarea id="float-input" rows="5" cols="30" pInputTextarea></textarea>
+    <label for="float-input">Summary</label>
+  </span>
+</form>
