@@ -8,9 +8,13 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.3s;
+}
+li:hover {
+    background-color: yellow;
 }
 
-li a {
+li p {
 
     text-decoration: none;
     color: #21325E;
@@ -20,3 +24,7 @@ li a {
 li span {
     color :#21325E
 }
+
+.selected {
+    background-color: yellow;
+  }

@@ -1,4 +1,4 @@
-button {
+a {
     padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: none;
@@ -7,8 +7,9 @@ button {
     border-radius: 10px;
     transition: 0.3s;
     cursor: pointer;
+    text-decoration: none;
 }
-button:hover{
+a:hover{
 
     background-color: #F1D00A;
     color: #3E497A;

@@ -1,10 +1,13 @@
-<img src="../../../assets/jeux/cod4.jpg" alt="#">
+<img src="../../../assets/jeux/{{game.img}}" alt="{{game.title}}">
 <div class="infos">
-    <h2>Call of duty 4 : Modern Warfare </h2>
+    <h2>{{game.title}}</h2>
     <div class="console">
-        <h3>PS4</h3>
-        <h3>PS4</h3>
-        <h3>PS4</h3>
+        <ng-container *ngFor="let platform of game.console">
+            <div class="platforme">
+                <img src="../../../assets/platformes/{{getPlatformLogo(platform)}}" [alt]="platform" class="platform-logo" />
+                <p>{{platform}}</p>
+            </div>
+          </ng-container>    
     </div>
 </div>
-<p>Ce jeu Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, voluptas rem!</p>
+<p>{{game.description}}</p>

@@ -15,7 +15,15 @@ img {
     width: 300px;
     height: 300px;
     border-radius: 10px;
-    
+    object-fit: cover;
+}
+
+.platform-logo {
+    height: 30px;
+    width: 30px;
+    padding-left: 10px;
+    object-fit: contain;
+
 }
 
 .infos h2 {
@@ -25,6 +33,18 @@ img {
 
 .console {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.platforme{
+    display: flex;
+    align-items: center;
+    background-color: #21325E;
+    border-radius: 20px;
+    color: #F0F0F0;
+
 }
 
 .console h3 {
@@ -33,4 +53,5 @@ img {
 
 p {
     padding: 10px;
+    text-align: justify;
 }

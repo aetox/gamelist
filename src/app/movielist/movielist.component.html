@@ -1,5 +1,11 @@
-<app-movielist-header />
 <div class="content">
-    <app-movielist-list/>
-    <app-movielist-gamecard/>
+    <div *ngIf="games().length">
+        <app-movielist-list 
+          *ngFor="let game of games(); let last = last"
+          [game]="game"
+          (gameSelected)="selectGame($event)"
+        />
+      </div>
+      
+    <app-movielist-gamecard *ngIf="selectedGame" [game]="selectedGame"/>
 </div>
