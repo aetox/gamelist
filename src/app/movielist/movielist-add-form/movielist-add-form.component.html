@@ -1,1 +1,36 @@
-<p>movielist-add-form works!</p>
+<h1>Ajouter un jeu</h1>
+
+<form [formGroup]="newGame">
+
+    <label for="title">Nom du jeu: </label>
+    <input id="title" type="text" formControlName="title">
+
+    <p>Platformes :</p>
+    <div class="platforms">
+        
+        <div class="platform">
+            <input type="checkbox" id="playstation" name="platforms" value="playstation">
+            <label for="playstation">Playstation</label>
+        </div>
+        <div class="platform"> 
+            <input type="checkbox" id="xbox" name="xbox" value="xbox">
+            <label for="xbox">Xbox</label>
+        </div>
+        <div class="platform">
+            <input type="checkbox" id="pc" name="pc" value="pc">
+            <label for="pc">PC</label>
+        </div>
+        <div class="platform">
+            <input type="checkbox" id="switch" name="switch" value="switch">
+            <label for="switch">Switch</label>
+        </div>
+    </div>
+    <div class="description">  
+        <label for="description">Description du jeu</label>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+    </div>
+
+    <input type="file" name="img" id="img">
+
+    <button type="submit">Ajouter le jeu</button>
+  </form>
